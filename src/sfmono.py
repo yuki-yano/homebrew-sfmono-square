@@ -40,6 +40,7 @@ def modify(in_file):
     _add_bar_to_shade_bottom(font)
     _set_proportion(font)
     _add_braille(font)
+    _add_white_triangle(font)
     font.removeOverlap()
     font.familyname = f"{PS_FAMILY} {FAMILY_SUFFIX}"
     font.fullname = f"{PS_FAMILY} {FAMILY_SUFFIX} {style}"
@@ -133,6 +134,28 @@ def _add_braille(font):
             for glyph in list(font.selection.byGlyphs):
                 glyph.transform(translate(-point[0], -point[1]))
     font.selection.select(PRIVATE)
+    font.cut()
+
+def _add_white_triangle(font):
+    font.selection.none()
+    font.selection.select(0x25BC)
+    font.copy()
+    font.selection.select(0x25BD)
+    font.paste()
+    font.selection.select(0x25BC)
+    font.copy()
+    font.selection.select(0xE000)
+    font.paste()
+    shrink = scale(0.95, 0.95)
+    move = translate(20, 20)
+    for glyph in list(font.selection.byGlyphs):
+        glyph.transform(compose(shrink, move))
+    font.selection.select(0xE000)
+    font.copy()
+    font.selection.select(0x25BD)
+    font.pasteInto()
+    font.removeOverlap()
+    font.selection.select(0xE000)
     font.cut()
 
 def _set_proportion(font):
