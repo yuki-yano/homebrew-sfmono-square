@@ -265,7 +265,7 @@ def _transform_sym(symfont, info):
         x_ratio = 0.85
         y_ratio = 0.85
         x_diff = 35
-        y_diff = -350
+        y_diff = -300
 
     scale = psMat.scale(x_ratio, y_ratio)
     translate = psMat.translate(x_diff, y_diff)
