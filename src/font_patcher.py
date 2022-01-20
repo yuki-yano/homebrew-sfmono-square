@@ -145,20 +145,20 @@ PATCH_SET = [
         "sym_end": 0xF27C,
         "src_start": 0xF4A9,
     },  # Desktop
-    # {
-    #     "name": "Material",
-    #     "filename": "materialdesignicons-webfont.ttf",
-    #     "sym_start": 0xF001,
-    #     "sym_end": 0xF800,
-    #     "src_start": 0xE800,
-    # },
-    # {
-    #     "name": "Material",
-    #     "filename": "materialdesignicons-webfont.ttf",
-    #     "sym_start": 0xF801,
-    #     "sym_end": 0xF847,
-    #     "src_start": 0xF500,
-    # },
+    {
+        "name": "Material",
+        "filename": "materialdesignicons-webfont.ttf",
+        "sym_start": 0xF001,
+        "sym_end": 0xF800,
+        "src_start": 0xE800,
+    },
+    {
+        "name": "Material",
+        "filename": "materialdesignicons-webfont.ttf",
+        "sym_start": 0xF801,
+        "sym_end": 0xF847,
+        "src_start": 0xF500,
+    },
     {
         "name": "Weather Icons",
         "filename": "weathericons-regular-webfont.ttf",
