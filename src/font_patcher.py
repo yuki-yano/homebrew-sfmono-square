@@ -10,162 +10,162 @@ import psMat
 # Symbol font ranges
 
 PATCH_SET = [
-    # {
-    #     "name": "Seti-UI + Custom",
-    #     "filename": "original-source.otf",
-    #     "sym_start": 0xE4FA,
-    #     "sym_end": 0xE52E,
-    #     "src_start": 0xE5FA,
-    # },
-    # {
-    #     "name": "Devicons",
-    #     "filename": "devicons.ttf",
-    #     "sym_start": 0xE600,
-    #     "sym_end": 0xE6C5,
-    #     "src_start": 0xE700,
-    # },
-    # {
-    #     "name": "Powerline Symbols",
-    #     "filename": "PowerlineSymbols.otf",
-    #     "sym_start": 0xE0A0,
-    #     "sym_end": 0xE0A2,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Powerline Symbols",
-    #     "filename": "PowerlineSymbols.otf",
-    #     "sym_start": 0xE0B0,
-    #     "sym_end": 0xE0B3,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Powerline Extra Symbols",
-    #     "filename": "PowerlineExtraSymbols.otf",
-    #     "sym_start": 0xE0A3,
-    #     "sym_end": 0xE0A3,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Powerline Extra Symbols",
-    #     "filename": "PowerlineExtraSymbols.otf",
-    #     "sym_start": 0xE0B4,
-    #     "sym_end": 0xE0C8,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Powerline Extra Symobls",
-    #     "filename": "PowerlineExtraSymbols.otf",
-    #     "sym_start": 0xE0CA,
-    #     "sym_end": 0xE0CA,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Powerline Extra Symobls",
-    #     "filename": "PowerlineExtraSymbols.otf",
-    #     "sym_start": 0xE0CC,
-    #     "sym_end": 0xE0D4,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Pomicons",
-    #     "filename": "Pomicons.otf",
-    #     "sym_start": 0xE000,
-    #     "sym_end": 0xE00A,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Font Awesome",
-    #     "filename": "FontAwesome.otf",
-    #     "sym_start": 0xF000,
-    #     "sym_end": 0xF2E0,
-    #     "src_start": None,
-    # },  # Maximize
-    # {
-    #     "name": "Font Awesome Extension",
-    #     "filename": "font-awesome-extension.ttf",
-    #     "sym_start": 0xE000,
-    #     "sym_end": 0xE0A9,
-    #     "src_start": 0xE200,
-    # },
-    # {
-    #     "name": "Font Linux",
-    #     "filename": "font-logos.ttf",
-    #     # Power, Power On/Off, Power On, Sleep
-    #     "sym_start": 0xF100,
-    #     "sym_end": 0xF11C,
-    #     "src_start": 0xF300,
-    # },
-    # {
-    #     "name": "Power Symbols",
-    #     "filename": "Unicode_IEC_symbol_font.otf",
-    #     # Heavy Circle (aka Power Off)
-    #     "sym_start": 0x23FB,
-    #     "sym_end": 0x23FE,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Power Symbols",
-    #     "filename": "Unicode_IEC_symbol_font.otf",
-    #     "sym_start": 0x2B58,
-    #     "sym_end": 0x2B58,
-    #     "src_start": None,
-    # },
-    # {
-    #     "name": "Octicons",
-    #     "filename": "octicons.ttf",
-    #     "sym_start": 0xF000,
-    #     "sym_end": 0xF0E8,
-    #     "src_start": 0xF400,
-    # },
-    # {
-    #     "name": "Octicons",
-    #     "filename": "octicons.ttf",
-    #     "sym_start": 0xF101,
-    #     "sym_end": 0xF105,
-    #     "src_start": 0xF4E9,
-    # },
-    # {
-    #     "name": "Octicons",
-    #     "filename": "octicons.ttf",
-    #     "sym_start": 0x2665,
-    #     "sym_end": 0x2665,
-    #     "src_start": None,
-    # },  # Heart
-    # {
-    #     "name": "Octicons",
-    #     "filename": "octicons.ttf",
-    #     "sym_start": 0x26A1,
-    #     "sym_end": 0x26A1,
-    #     "src_start": None,
-    # },  # Zap
-    # {
-    #     "name": "Octicons",
-    #     "filename": "octicons.ttf",
-    #     "sym_start": 0xF27C,
-    #     "sym_end": 0xF27C,
-    #     "src_start": 0xF4A9,
-    # },  # Desktop
-    # {
-    #     "name": "Material",
-    #     "filename": "materialdesignicons-webfont.ttf",
-    #     "sym_start": 0xF001,
-    #     "sym_end": 0xF800,
-    #     "src_start": 0xE800,
-    # },
-    # {
-    #     "name": "Material",
-    #     "filename": "materialdesignicons-webfont.ttf",
-    #     "sym_start": 0xF801,
-    #     "sym_end": 0xF847,
-    #     "src_start": 0xF500,
-    # },
-    # {
-    #     "name": "Weather Icons",
-    #     "filename": "weathericons-regular-webfont.ttf",
-    #     "sym_start": 0xF000,
-    #     "sym_end": 0xF0EB,
-    #     "src_start": 0xE300,
-    # },
+    {
+        "name": "Seti-UI + Custom",
+        "filename": "original-source.otf",
+        "sym_start": 0xE4FA,
+        "sym_end": 0xE52E,
+        "src_start": 0xE5FA,
+    },
+    {
+        "name": "Devicons",
+        "filename": "devicons.ttf",
+        "sym_start": 0xE600,
+        "sym_end": 0xE6C5,
+        "src_start": 0xE700,
+    },
+    {
+        "name": "Powerline Symbols",
+        "filename": "PowerlineSymbols.otf",
+        "sym_start": 0xE0A0,
+        "sym_end": 0xE0A2,
+        "src_start": None,
+    },
+    {
+        "name": "Powerline Symbols",
+        "filename": "PowerlineSymbols.otf",
+        "sym_start": 0xE0B0,
+        "sym_end": 0xE0B3,
+        "src_start": None,
+    },
+    {
+        "name": "Powerline Extra Symbols",
+        "filename": "PowerlineExtraSymbols.otf",
+        "sym_start": 0xE0A3,
+        "sym_end": 0xE0A3,
+        "src_start": None,
+    },
+    {
+        "name": "Powerline Extra Symbols",
+        "filename": "PowerlineExtraSymbols.otf",
+        "sym_start": 0xE0B4,
+        "sym_end": 0xE0C8,
+        "src_start": None,
+    },
+    {
+        "name": "Powerline Extra Symobls",
+        "filename": "PowerlineExtraSymbols.otf",
+        "sym_start": 0xE0CA,
+        "sym_end": 0xE0CA,
+        "src_start": None,
+    },
+    {
+        "name": "Powerline Extra Symobls",
+        "filename": "PowerlineExtraSymbols.otf",
+        "sym_start": 0xE0CC,
+        "sym_end": 0xE0D4,
+        "src_start": None,
+    },
+    {
+        "name": "Pomicons",
+        "filename": "Pomicons.otf",
+        "sym_start": 0xE000,
+        "sym_end": 0xE00A,
+        "src_start": None,
+    },
+    {
+        "name": "Font Awesome",
+        "filename": "FontAwesome.otf",
+        "sym_start": 0xF000,
+        "sym_end": 0xF2E0,
+        "src_start": None,
+    },  # Maximize
+    {
+        "name": "Font Awesome Extension",
+        "filename": "font-awesome-extension.ttf",
+        "sym_start": 0xE000,
+        "sym_end": 0xE0A9,
+        "src_start": 0xE200,
+    },
+    {
+        "name": "Font Linux",
+        "filename": "font-logos.ttf",
+        # Power, Power On/Off, Power On, Sleep
+        "sym_start": 0xF100,
+        "sym_end": 0xF11C,
+        "src_start": 0xF300,
+    },
+    {
+        "name": "Power Symbols",
+        "filename": "Unicode_IEC_symbol_font.otf",
+        # Heavy Circle (aka Power Off)
+        "sym_start": 0x23FB,
+        "sym_end": 0x23FE,
+        "src_start": None,
+    },
+    {
+        "name": "Power Symbols",
+        "filename": "Unicode_IEC_symbol_font.otf",
+        "sym_start": 0x2B58,
+        "sym_end": 0x2B58,
+        "src_start": None,
+    },
+    {
+        "name": "Octicons",
+        "filename": "octicons.ttf",
+        "sym_start": 0xF000,
+        "sym_end": 0xF0E8,
+        "src_start": 0xF400,
+    },
+    {
+        "name": "Octicons",
+        "filename": "octicons.ttf",
+        "sym_start": 0xF101,
+        "sym_end": 0xF105,
+        "src_start": 0xF4E9,
+    },
+    {
+        "name": "Octicons",
+        "filename": "octicons.ttf",
+        "sym_start": 0x2665,
+        "sym_end": 0x2665,
+        "src_start": None,
+    },  # Heart
+    {
+        "name": "Octicons",
+        "filename": "octicons.ttf",
+        "sym_start": 0x26A1,
+        "sym_end": 0x26A1,
+        "src_start": None,
+    },  # Zap
+    {
+        "name": "Octicons",
+        "filename": "octicons.ttf",
+        "sym_start": 0xF27C,
+        "sym_end": 0xF27C,
+        "src_start": 0xF4A9,
+    },  # Desktop
+    {
+        "name": "Material",
+        "filename": "materialdesignicons-webfont.ttf",
+        "sym_start": 0xF001,
+        "sym_end": 0xF800,
+        "src_start": 0xE800,
+    },
+    {
+        "name": "Material",
+        "filename": "materialdesignicons-webfont.ttf",
+        "sym_start": 0xF801,
+        "sym_end": 0xF847,
+        "src_start": 0xF500,
+    },
+    {
+        "name": "Weather Icons",
+        "filename": "weathericons-regular-webfont.ttf",
+        "sym_start": 0xF000,
+        "sym_end": 0xF0EB,
+        "src_start": 0xE300,
+    },
     {
         "name": "Codicons",
         "filename": "codicon.ttf",
@@ -262,10 +262,10 @@ def _transform_sym(symfont, info):
         y_diff = -250
 
     elif info["name"] == "Codicons":
-        x_ratio = 0.90
-        y_ratio = 0.90
+        x_ratio = 0.85
+        y_ratio = 0.85
         x_diff = 35
-        y_diff = -350
+        y_diff = -400
 
     scale = psMat.scale(x_ratio, y_ratio)
     translate = psMat.translate(x_diff, y_diff)
