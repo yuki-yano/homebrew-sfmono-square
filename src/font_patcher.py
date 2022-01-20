@@ -145,26 +145,33 @@ PATCH_SET = [
         "sym_end": 0xF27C,
         "src_start": 0xF4A9,
     },  # Desktop
-    {
-        "name": "Material",
-        "filename": "materialdesignicons-webfont.ttf",
-        "sym_start": 0xF001,
-        "sym_end": 0xF800,
-        "src_start": 0xE800,
-    },
-    {
-        "name": "Material",
-        "filename": "materialdesignicons-webfont.ttf",
-        "sym_start": 0xF801,
-        "sym_end": 0xF847,
-        "src_start": 0xF500,
-    },
+    # {
+    #     "name": "Material",
+    #     "filename": "materialdesignicons-webfont.ttf",
+    #     "sym_start": 0xF001,
+    #     "sym_end": 0xF800,
+    #     "src_start": 0xE800,
+    # },
+    # {
+    #     "name": "Material",
+    #     "filename": "materialdesignicons-webfont.ttf",
+    #     "sym_start": 0xF801,
+    #     "sym_end": 0xF847,
+    #     "src_start": 0xF500,
+    # },
     {
         "name": "Weather Icons",
         "filename": "weathericons-regular-webfont.ttf",
         "sym_start": 0xF000,
         "sym_end": 0xF0EB,
         "src_start": 0xE300,
+    },
+    {
+        "name": "Codicons",
+        "filename": "codicon.ttf",
+        "sym_start": 0xEA60,
+        "sym_end": 0xEBEB,
+        "src_start": None,
     },
 ]
 
@@ -253,6 +260,12 @@ def _transform_sym(symfont, info):
         y_ratio = 1.1
         x_diff = -50
         y_diff = -250
+
+    elif info["name"] == "Codicons":
+        x_ratio = 0.95
+        y_ratio = 0.95
+        x_diff = 30
+        y_diff = -100
 
     scale = psMat.scale(x_ratio, y_ratio)
     translate = psMat.translate(x_diff, y_diff)
